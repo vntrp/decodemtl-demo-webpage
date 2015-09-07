@@ -7,6 +7,10 @@ body {
     color: white;
 }
 
+.cursive-heading {
+    font-family: 'Lobster', cursive;
+}
+
 #profile-pic {
     border-radius: 50%;
 }
