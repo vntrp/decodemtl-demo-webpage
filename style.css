@@ -1,7 +1,15 @@
+@keyframes spin {
+    from {
+        transform: rotateY(-45deg);
+    }
+    to {
+        transform: rotateY(45deg);
+    }
+}
 body {
     font-family: sans-serif;
     text-align: center;
-    background-image: url(http://placekitten.com/g/1000/1001);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0 , rgba(0,0,0,0.5) 100%), url(http://placekitten.com/g/1000/1001);
     background-size: cover;
     background-position: center;
     color: white;
@@ -11,6 +19,12 @@ body {
     font-family: 'Lobster', cursive;
 }
 
+.profile-pic-wrapper {
+    perspective: 500px;
+}
 #profile-pic {
     border-radius: 50%;
+    animation: spin 0.5s infinite linear;
+    animation-direction: alternate;
+    box-shadow: 0 0 20px 5px rgba(0,0,0, 0.5);
 }
